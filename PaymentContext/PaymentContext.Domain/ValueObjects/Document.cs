@@ -6,10 +6,11 @@ namespace PaymentContext.Domain.ValueObjects
 {
     public class Document : ValueObject
     {
-        public Document(string number)
+        public Document(string number, EDocumentType type)
         {
             this.Number = number;
-
+            this.Type = type;
+            
             AddNotifications(new Contract()
                 .Requires()
                 .IsTrue(Validate(), "Document.Number", "Documento inválido")
