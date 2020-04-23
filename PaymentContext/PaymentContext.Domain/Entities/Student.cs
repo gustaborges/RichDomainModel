@@ -27,9 +27,9 @@ namespace PaymentContext.Domain.Entities
         {
             foreach(var sub in Subscriptions)
             {
-                sub.Active = false;
+                sub.Inactivate();
             }
-            
+
             _subscriptions.Add(subscription);
         }
     }
