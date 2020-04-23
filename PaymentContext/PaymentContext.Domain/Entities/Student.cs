@@ -1,15 +1,36 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PaymentContext.Domain.Entities
 {
     public class Student
     {
-        public string FirstName {get;set;}
-        public string Lastname { get; set; }   
-        public string Document { get; set; }
-        public string Email { get; set; }
-        public string Address { get; set; }
+        private IList<Subscription> _subscriptions;
+        public Student(string firstName, string lastname, string document, string email)
+        {
+            FirstName = firstName;
+            Lastname = lastname;
+            Document = document;
+            Email = email;
+            _subscriptions = new List<Subscription>();
+        }
 
-        public List<Subscription> Subscriptions { get; set;}
+        public string FirstName {get; private set;}
+        public string Lastname { get; private set; }   
+        public string Document { get; private set; }
+        public string Email { get; private set; }
+        public string Address { get; private set; }
+
+        public IReadOnlyCollection<Subscription> Subscriptions { get => _subscriptions.ToArray(); }
+
+        public void AddSubscription(Subscription subscription)
+        {
+            foreach(var sub in Subscriptions)
+            {
+                sub.Active = false;
+            }
+            
+            _subscriptions.Add(subscription);
+        }
     }
 }
