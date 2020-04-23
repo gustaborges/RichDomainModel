@@ -8,7 +8,7 @@ namespace PaymentContext.Tests.Entities
     public class StudentTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AdicionarAssinatura()
         {
             var subscription = new Subscription(null);
             var student = new Student(
@@ -17,8 +17,7 @@ namespace PaymentContext.Tests.Entities
                 new Email("gustavo@gb.com")
                 );
 
-            student.AddSubscription(subscription);   
-
+            student.AddSubscription(subscription);
         }
     }
 }

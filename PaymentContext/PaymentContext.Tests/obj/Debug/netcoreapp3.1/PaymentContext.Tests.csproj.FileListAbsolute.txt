@@ -96,3 +96,4 @@ D:\gusta\GitHub\RichDomain\PaymentContext\PaymentContext.Tests\bin\Debug\netcore
 D:\gusta\GitHub\RichDomain\PaymentContext\PaymentContext.Tests\bin\Debug\netcoreapp3.1\PaymentContext.Shared.dll
 D:\gusta\GitHub\RichDomain\PaymentContext\PaymentContext.Tests\bin\Debug\netcoreapp3.1\PaymentContext.Shared.pdb
 D:\gusta\GitHub\RichDomain\PaymentContext\PaymentContext.Tests\bin\Debug\netcoreapp3.1\PaymentContext.Domain.pdb
+D:\gusta\GitHub\RichDomain\PaymentContext\PaymentContext.Tests\bin\Debug\netcoreapp3.1\Flunt.dll

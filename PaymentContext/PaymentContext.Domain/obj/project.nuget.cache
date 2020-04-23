@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N/O7j3Ozh0pPMkxs1QwGEeqhGfoLpIisgtnXABN+I24y5Wk5PfWmf1klKS9azrcH1lONKQ0rxqErXeJYYsN/jA==",
+  "dgSpecHash": "V1yXfVWCyU2BYHI1RWtc4QqEnI7v2+A/NLzAPj/5cb2Eqv2rHBy1lfJe81iV17ek1yApt4RV5uRNlT5eyXFH7Q==",
   "success": true,
   "projectFilePath": "D:\\gusta\\GitHub\\RichDomain\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gusta\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
