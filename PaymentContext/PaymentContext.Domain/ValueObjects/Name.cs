@@ -9,7 +9,7 @@ namespace PaymentContext.Domain.ValueObjects
         public Name(string firstName, string lastname)
         {
             this.FirstName = firstName;
-            this.Lastname = lastname;
+            this.LastName = lastname;
 
             AddNotifications(new Contract()
                 .Requires()
@@ -20,6 +20,11 @@ namespace PaymentContext.Domain.ValueObjects
         }
         
         public string FirstName { get; private set; }
-        public string Lastname { get; private set; }
+        public string LastName { get; private set; }
+
+        public override string ToString() 
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 }
