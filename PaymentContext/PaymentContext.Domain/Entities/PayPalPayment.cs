@@ -8,13 +8,13 @@ namespace PaymentContext.Domain.Entities
         public PayPalPayment(
             string transactionCode, 
             DateTime paidDate, 
-            DateTime expiredDate, 
+            DateTime expireDate, 
             decimal total, 
             decimal totalPaid, 
             string payer, 
             Document document, 
             Address address, 
-            Email email) : base(paidDate, expiredDate, total, totalPaid, payer, document, address, email)
+            Email email) : base(paidDate, expireDate, total, totalPaid, payer, document, address, email)
         {
             TransactionCode = transactionCode;
         }
